@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quanquan.autograph.MainActivity"
+    android:orientation="vertical"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="7"
+       >
+      <com.quanquan.autograph.view.LinePathView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/my_view"
+          android:background="#FFFFFF"
+          />
+
+
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="horizontal"
+       >
+      <Button
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="清除"
+          android:layout_weight="2"
+          android:id="@+id/bt_clear"
+          />
+      <Button
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="确定"
+          android:layout_weight="2"
+          android:id="@+id/bt_save"
+          />
+
+   </LinearLayout>
+
+</LinearLayout>
